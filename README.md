@@ -277,12 +277,5 @@ SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and
 
 ---
 
-## 👩‍💻 About Me
-
-**Mehreen Muzammil** — Junior Data Analyst & Business Analyst  
-📍 Cambridge, Ontario, Canada  
-🔗 [GitHub](https://github.com/MehreenMuzammil) | [Tableau Public](https://public.tableau.com/app/profile/mehreen.muzammil)
-
----
 
 *This project was built as part of a data analytics portfolio to demonstrate end-to-end analytical skills across Python, SQL, and Tableau.*
