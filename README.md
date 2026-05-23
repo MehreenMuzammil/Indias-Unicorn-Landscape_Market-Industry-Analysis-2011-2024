@@ -193,7 +193,7 @@ Bengaluru accounts for nearly half of all mapped unicorn HQs — India's undispu
 
 These top 3 investors alone backed **37% of all Indian unicorns** — a highly concentrated investment landscape. Sequoia Capital India backed nearly 1 in 5 unicorns.
 
-> 📌 *Source: SQL Query 10 (most active investors) — investor data enriched from the global unicorn dataset. The `STRING_TO_ARRAY` function was used to split comma-separated investor names and count individual appearances across all unicorns.*
+> *Source: SQL Query 10 (most active investors) — investor data enriched from the global unicorn dataset. The `STRING_TO_ARRAY` function was used to split comma-separated investor names and count individual appearances across all unicorns.*
 
 ### 5. Funding & Valuation — Capital Efficiency
 | Startup | Raised (M) | Valuation (M) | Ratio |
@@ -206,7 +206,7 @@ These top 3 investors alone backed **37% of all Indian unicorns** — a highly c
 
 **Upstox is India's most capital-efficient unicorn** — raising just $54M to reach a $3.4B valuation. By contrast, CRED raised $613M for the same tier of valuation.
 
-> 📌 *Source: SQL Query 15 (`valuation_to_funding_ratio = valuation_million_usd / total_raised_million_usd`) — funding data enriched from the global unicorn dataset; valuation data from the primary Indian unicorn dataset. Only 48/99 startups had funding data available.*
+> *Source: SQL Query 15 (`valuation_to_funding_ratio = valuation_million_usd / total_raised_million_usd`) — funding data enriched from the global unicorn dataset; valuation data from the primary Indian unicorn dataset. Only 48/99 startups had funding data available.*
 
 ### 6. Speed to Unicorn — Which Sectors Move Fastest?
 | Sector | Avg Years to $1B |
@@ -221,7 +221,7 @@ These top 3 investors alone backed **37% of all Indian unicorns** — a highly c
 
 AI & Research reached unicorn status in just 1 year (driven by Krutrim). SaaS and Media take the longest — these are slower-burn, relationship-driven businesses.
 
-> 📌 *Source: SQL Query 13 (average years to unicorn by sector) — calculated using the engineered column `years_to_unicorn = unicorn_entry_year - founding_year` created during Python data cleaning phase.*
+> *Source: SQL Query 13 (average years to unicorn by sector) — calculated using the engineered column `years_to_unicorn = unicorn_entry_year - founding_year` created during Python data cleaning phase.*
 
 ---
 
@@ -246,7 +246,7 @@ SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and
 
 ---
 
-## 🚀 Recommendations
+## Recommendations
 
 **For Investors:**
 - Fintech and SaaS offer the best risk-adjusted returns given capital efficiency ratios
@@ -262,26 +262,7 @@ SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and
 
 ---
 
-## ▶️ How to Run This Project
-
-### Prerequisites
-```bash
-pip install pandas numpy thefuzz python-Levenshtein jupyter
-```
-
-### Steps
-1. Clone the repository
-2. Place `Unicorn_Startups.csv` and `Unicorn_Companies.csv` in the root folder
-3. Run `01_data_cleaning.ipynb` → generates `Unicorn_Startups_Cleaned.csv`
-4. Run `02_data_enrichment.ipynb` → generates `Unicorn_Startups_Enriched.csv`
-5. Load `Unicorn_Startups_Enriched.csv` into PostgreSQL and run SQL queries
-6. Open the [live Tableau dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)
-
----
-
----
-
-## 🏁 Key Takeaways
+## Key Takeaways
 
 | # | Takeaway | Data Point |
 |---|---|---|
