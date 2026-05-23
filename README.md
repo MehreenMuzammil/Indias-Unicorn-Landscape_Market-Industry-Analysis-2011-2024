@@ -6,7 +6,7 @@ This project is a **macro-level market and industry analysis** of India's unicor
 
 ---
 
-## 🎯 Goals & Analysis Performed
+- Goals & Analysis Performed
 
 | # | Goal | Analysis Performed |
 |---|---|---|
@@ -19,7 +19,7 @@ This project is a **macro-level market and industry analysis** of India's unicor
 
 ---
 
-## 🗺️ Project Roadmap
+- Project Roadmap
 
 ```
 Phase 1 — Data Cleaning (Python)
@@ -40,7 +40,7 @@ Phase 5 — Storytelling & Documentation
 
 ---
 
-## 💼 Business Relevance
+- Business Relevance
 
 This analysis is relevant to multiple real-world stakeholders:
 
@@ -64,7 +64,7 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 
 ---
 
-## 🛠 Tools & Technologies
+- Tools & Technologies
 
 | Tool | Purpose |
 |---|---|
@@ -76,7 +76,7 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 
 ---
 
-## 📁 Project Structure
+- Project Structure
 
 ```
 unicorn-startup-analysis/
@@ -101,7 +101,7 @@ unicorn-startup-analysis/
 
 ---
 
-## 📦 Datasets
+- Datasets
 
 | Dataset | Source | Records |
 |---|---|---|
@@ -112,7 +112,7 @@ unicorn-startup-analysis/
 
 ---
 
-## 🔄 Methodology
+- Methodology
 
 ### Phase 1 — Data Cleaning (Python)
 - Standardised column names and data types
@@ -141,7 +141,7 @@ Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 ---
 
-## 📊 Analysis & Key Findings
+- Analysis & Key Findings
 
 ### 1. Market Overview — The Unicorn Boom
 | Year | New Unicorns |
@@ -154,7 +154,7 @@ Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 **2021 was extraordinary** — 46 unicorns were born in a single year, representing 46% of all Indian unicorns. This surge was driven by post-COVID digital acceleration, record-low global interest rates, and a flood of venture capital into emerging markets.
 
-> 📌 *Source: SQL Query 1 (total unicorns by year) and Query 3 (year ranked by surge) — derived from `unicorn_entry_year` in the primary dataset.*
+> *Source: SQL Query 1 (total unicorns by year) and Query 3 (year ranked by surge) — derived from `unicorn_entry_year` in the primary dataset.*
 
 ### 2. Industry Analysis — Sector Dominance
 | Sector | Unicorns | Share |
@@ -167,7 +167,7 @@ Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 **Fintech + E-commerce = 50% of all unicorns.** India's startup story is fundamentally a payments and commerce story.
 
-> 📌 *Source: SQL Query 4 (sector dominance with percentage share) — derived from `industry_clean` column standardised during Python data cleaning phase.*
+> *Source: SQL Query 4 (sector dominance with percentage share) — derived from `industry_clean` column standardised during Python data cleaning phase.*
 
 ### 3. Geography — Bengaluru Dominates
 | City | Unicorns |
@@ -180,7 +180,7 @@ Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 Bengaluru accounts for nearly half of all mapped unicorn HQs — India's undisputed Silicon Valley. Tier 2 cities (Jaipur, Noida, Chennai) are beginning to emerge but remain marginal. Note: City data covers 48/99 startups enriched from the global unicorn dataset.
 
-> 📌 *Source: SQL Query 7 (city hubs) and Query 8 (Tier 1 vs Tier 2) — city data enriched from the global unicorn dataset via fuzzy matching in Python (02_data_enrichment.ipynb).*
+> *Source: SQL Query 7 (city hubs) and Query 8 (Tier 1 vs Tier 2) — city data enriched from the global unicorn dataset via fuzzy matching in Python (02_data_enrichment.ipynb).*
 
 ### 4. Investor Analysis — The Power Trio
 | Investor | Unicorns Backed |
