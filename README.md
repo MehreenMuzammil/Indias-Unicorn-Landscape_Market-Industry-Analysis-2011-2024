@@ -58,9 +58,9 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 
 ---
 
-## 🔗 Live Dashboard
+- Live Dashboard
 
-👉 **[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)**
+**[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)**
 
 ---
 
@@ -81,15 +81,15 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 ```
 unicorn-startup-analysis/
 │
-├── 📓 01_data_cleaning.ipynb           ← Data cleaning & standardisation
-├── 📓 02_data_enrichment.ipynb         ← Data enrichment via fuzzy matching
+├── 01_data_cleaning.ipynb           ← Data cleaning & standardisation
+├── 02_data_enrichment.ipynb         ← Data enrichment via fuzzy matching
 │
-├── 📊 Unicorn_Startups.csv             ← Original raw dataset
-├── 📊 Unicorn_Companies.csv            ← Global unicorn dataset (secondary source)
-├── 📊 Unicorn_Startups_Cleaned.csv     ← Output from notebook 01
-├── 📊 Unicorn_Startups_Enriched.csv    ← Output from notebook 02 (used in SQL & Tableau)
+├── Unicorn_Startups.csv             ← Original raw dataset
+├── Unicorn_Companies.csv            ← Global unicorn dataset (secondary source)
+├── Unicorn_Startups_Cleaned.csv     ← Output from notebook 01
+├── Unicorn_Startups_Enriched.csv    ← Output from notebook 02 (used in SQL & Tableau)
 │
-├── 📂 sql_queries/
+├── sql_queries/
 │   ├── section1_market_overview.sql
 │   ├── section2_industry_analysis.sql
 │   ├── section3_geography.sql
