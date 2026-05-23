@@ -1,0 +1,307 @@
+- Project Overview
+
+This project is a **macro-level market and industry analysis** of India's unicorn startup ecosystem — companies valued at $1 billion or more. Using a multi-tool analytics pipeline, I explore what the rise of Indian unicorns reveals about industry trends, investor behaviour, geography, funding patterns, and the future of India's startup economy.
+
+> **Business Question:** *What does the rise of Indian unicorns reveal about industry trends, investor behaviour, and the future of India's startup ecosystem?*
+
+---
+
+## 🎯 Goals & Analysis Performed
+
+| # | Goal | Analysis Performed |
+|---|---|---|
+| 1 | Understand the unicorn boom timeline | Total unicorns by year, cumulative growth curve, peak year identification |
+| 2 | Identify dominant and emerging sectors | Sector dominance by count, emerging vs saturated classification, avg valuation by sector |
+| 3 | Map India's startup geography | City-wise unicorn distribution, Tier 1 vs Tier 2 city breakdown |
+| 4 | Understand investor landscape | Most active investors, sector-wise investor dominance, portfolio value analysis |
+| 5 | Analyse funding and valuation patterns | Speed to unicorn by sector, capital efficiency ratio, profitability vs valuation correlation |
+| 6 | Deliver business storytelling | Executive insights, recommendations for investors, founders, and policymakers |
+
+---
+
+## 🗺️ Project Roadmap
+
+```
+Phase 1 — Data Cleaning (Python)
+    └── Raw CSV → Cleaned & standardised dataset
+            ↓
+Phase 2 — Data Enrichment (Python + fuzzy matching)
+    └── Merged with global dataset → Added city, investor, funding columns
+            ↓
+Phase 3 — SQL Analysis (PostgreSQL / pgAdmin 4)
+    └── 18 queries across 5 analytical areas
+            ↓
+Phase 4 — Visualisation (Tableau Public)
+    └── 7-chart interactive dashboard published live
+            ↓
+Phase 5 — Storytelling & Documentation
+    └── Executive insights, recommendations, GitHub README
+```
+
+---
+
+## 💼 Business Relevance
+
+This analysis is relevant to multiple real-world stakeholders:
+
+**Investors & VCs**
+Understanding which sectors produce the most capital-efficient unicorns helps allocate capital more effectively. Fintech's 62x valuation-to-funding ratio (Upstox) signals strong ROI potential with lower risk exposure.
+
+**Startup Founders**
+Knowing the average years to unicorn by sector sets realistic expectations. SaaS founders should expect a 10+ year journey, while Fintech founders can target faster milestones with leaner capital structures.
+
+**Policymakers & Government**
+Bengaluru's dominance highlights a geographic concentration risk for India's economy. Policies that incentivise VC activity in Tier 2 cities could distribute economic value more equitably.
+
+**Business Analysts & Strategy Teams**
+The 2021 boom and subsequent 2023–24 funding winter illustrate how macro conditions (interest rates, global liquidity) directly impact startup valuations — a critical input for market entry and expansion strategies.
+
+---
+
+## 🔗 Live Dashboard
+
+👉 **[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)**
+
+---
+
+## 🛠 Tools & Technologies
+
+| Tool | Purpose |
+|---|---|
+| **Python (pandas, numpy)** | Data cleaning & enrichment |
+| **thefuzz** | Fuzzy name matching for dataset enrichment |
+| **Anaconda Toolbox** | Python notebook environment |
+| **PostgreSQL (pgAdmin 4)** | SQL analysis & querying |
+| **Tableau Public** | Interactive dashboard & visualisation |
+
+---
+
+## 📁 Project Structure
+
+```
+unicorn-startup-analysis/
+│
+├── 📓 01_data_cleaning.ipynb           ← Data cleaning & standardisation
+├── 📓 02_data_enrichment.ipynb         ← Data enrichment via fuzzy matching
+│
+├── 📊 Unicorn_Startups.csv             ← Original raw dataset
+├── 📊 Unicorn_Companies.csv            ← Global unicorn dataset (secondary source)
+├── 📊 Unicorn_Startups_Cleaned.csv     ← Output from notebook 01
+├── 📊 Unicorn_Startups_Enriched.csv    ← Output from notebook 02 (used in SQL & Tableau)
+│
+├── 📂 sql_queries/
+│   ├── section1_market_overview.sql
+│   ├── section2_industry_analysis.sql
+│   ├── section3_geography.sql
+│   ├── section4_investor_analysis.sql
+│   └── section5_funding_valuation.sql
+│
+└── README.md
+```
+
+---
+
+## 📦 Datasets
+
+| Dataset | Source | Records |
+|---|---|---|
+| Indian Unicorn Startups | [Kaggle — saquib7hussain](https://www.kaggle.com/datasets/saquib7hussain/indian-unicorn-startups) | 99 startups |
+| Global Unicorn Companies | [Kaggle — deepcontractor](https://www.kaggle.com/datasets/deepcontractor/unicorn-companies-dataset) | 1,037 companies |
+
+> **Note:** City, investor, and funding data was enriched by merging the Indian dataset with the global unicorn dataset using fuzzy name matching in Python. 48/99 startups were successfully enriched. Remaining startups reflect newer entrants (post-2022) not yet captured in the global source.
+
+---
+
+## 🔄 Methodology
+
+### Phase 1 — Data Cleaning (Python)
+- Standardised column names and data types
+- Converted valuation and profit/loss from text (`"$1 Billion"`) to numeric values
+- Standardised inconsistent industry labels (e.g. `"Fintech"`, `"Financial Technology"`, `"Fintech Payments"` → `"Fintech & Financial Services"`)
+- Normalised status values and city names
+- Engineered new columns: `years_to_unicorn`, `is_profitable`, `valuation_million_usd`
+
+### Phase 2 — Data Enrichment (Python)
+- Loaded secondary global dataset and filtered for Indian companies (63 matches)
+- Performed exact name matching first (46 matches)
+- Applied fuzzy matching using `thefuzz` library for remaining records (score threshold ≥ 65)
+- Added city, investor, total raised, and investors count columns
+- Cleaned and standardised city names (Bengaluru/Bangalore → Bengaluru)
+
+### Phase 3 — SQL Analysis (PostgreSQL)
+Ran 18 queries across 5 analytical areas:
+- Market Overview — boom years, cumulative growth
+- Industry Analysis — sector dominance, emerging vs saturated, avg valuation
+- Geography — city hubs, Tier 1 vs Tier 2
+- Investor Analysis — most active investors, sector dominance, portfolio value
+- Funding & Valuation — speed to unicorn, capital efficiency, profitability
+
+### Phase 4 — Visualisation (Tableau Public)
+Built an interactive 7-chart dashboard with cross-filtering capabilities.
+
+---
+
+## 📊 Analysis & Key Findings
+
+### 1. Market Overview — The Unicorn Boom
+| Year | New Unicorns |
+|---|---|
+| 2021 | **46** |
+| 2022 | 23 |
+| 2020 | 14 |
+| 2019 | 9 |
+| 2018 | 4 |
+
+**2021 was extraordinary** — 46 unicorns were born in a single year, representing 46% of all Indian unicorns. This surge was driven by post-COVID digital acceleration, record-low global interest rates, and a flood of venture capital into emerging markets.
+
+> 📌 *Source: SQL Query 1 (total unicorns by year) and Query 3 (year ranked by surge) — derived from `unicorn_entry_year` in the primary dataset.*
+
+### 2. Industry Analysis — Sector Dominance
+| Sector | Unicorns | Share |
+|---|---|---|
+| Fintech & Financial Services | 26 | 26.3% |
+| E-commerce | 24 | 24.2% |
+| SaaS & Enterprise Tech | 14 | 14.1% |
+| Healthtech | 7 | 7.1% |
+| Media & Entertainment | 6 | 6.1% |
+
+**Fintech + E-commerce = 50% of all unicorns.** India's startup story is fundamentally a payments and commerce story.
+
+> 📌 *Source: SQL Query 4 (sector dominance with percentage share) — derived from `industry_clean` column standardised during Python data cleaning phase.*
+
+### 3. Geography — Bengaluru Dominates
+| City | Unicorns |
+|---|---|
+| Bengaluru | 23 |
+| Gurgaon | 9 |
+| Mumbai | 5 |
+| Pune | 4 |
+| New Delhi | 3 |
+
+Bengaluru accounts for nearly half of all mapped unicorn HQs — India's undisputed Silicon Valley. Tier 2 cities (Jaipur, Noida, Chennai) are beginning to emerge but remain marginal. Note: City data covers 48/99 startups enriched from the global unicorn dataset.
+
+> 📌 *Source: SQL Query 7 (city hubs) and Query 8 (Tier 1 vs Tier 2) — city data enriched from the global unicorn dataset via fuzzy matching in Python (02_data_enrichment.ipynb).*
+
+### 4. Investor Analysis — The Power Trio
+| Investor | Unicorns Backed |
+|---|---|
+| Sequoia Capital India | 19 |
+| Tiger Global Management | 10 |
+| Accel | 8 |
+| SoftBank Group | 5 |
+| Nexus Venture Partners | 4 |
+
+These top 3 investors alone backed **37% of all Indian unicorns** — a highly concentrated investment landscape. Sequoia Capital India backed nearly 1 in 5 unicorns.
+
+> 📌 *Source: SQL Query 10 (most active investors) — investor data enriched from the global unicorn dataset. The `STRING_TO_ARRAY` function was used to split comma-separated investor names and count individual appearances across all unicorns.*
+
+### 5. Funding & Valuation — Capital Efficiency
+| Startup | Raised (M) | Valuation (M) | Ratio |
+|---|---|---|---|
+| Upstox | $54M | $3,400M | **62.96x** |
+| CoinDCX | $109M | $2,150M | 19.65x |
+| CRED | $613M | $6,400M | 10.43x |
+| Razorpay | $741M | $7,500M | 10.11x |
+| Darwinbox | $106M | $1,000M | 9.37x |
+
+**Upstox is India's most capital-efficient unicorn** — raising just $54M to reach a $3.4B valuation. By contrast, CRED raised $613M for the same tier of valuation.
+
+> 📌 *Source: SQL Query 15 (`valuation_to_funding_ratio = valuation_million_usd / total_raised_million_usd`) — funding data enriched from the global unicorn dataset; valuation data from the primary Indian unicorn dataset. Only 48/99 startups had funding data available.*
+
+### 6. Speed to Unicorn — Which Sectors Move Fastest?
+| Sector | Avg Years to $1B |
+|---|---|
+| AI & Research | 1.0 |
+| Manufacturing | 3.0 |
+| Automotive | 4.5 |
+| E-commerce | 6.8 |
+| Fintech & Financial Services | 7.9 |
+| SaaS & Enterprise Tech | 10.5 |
+| Media & Entertainment | 10.8 |
+
+AI & Research reached unicorn status in just 1 year (driven by Krutrim). SaaS and Media take the longest — these are slower-burn, relationship-driven businesses.
+
+> 📌 *Source: SQL Query 13 (average years to unicorn by sector) — calculated using the engineered column `years_to_unicorn = unicorn_entry_year - founding_year` created during Python data cleaning phase.*
+
+---
+
+## 💡 Executive Insights
+
+**1. 2021 was a once-in-a-decade event — not the new normal.**
+SQL Query 1 & 3 show 46 unicorns were born in 2021 alone — more than all prior years combined. The 2023–24 funding winter (just 3 new unicorns) confirms this was macro-driven, not structural. Investors and founders should plan for longer runways.
+
+**2. Fintech is India's most dominant AND most capital-efficient sector.**
+SQL Query 4 shows Fintech leads with 26 unicorns (26.3%). Query 15 shows companies like Upstox achieving a 62.96x valuation-to-funding ratio — the highest in the dataset. Fintech is India's strongest value-creation engine, driven by a massive unbanked population and UPI's digital payments revolution.
+
+**3. Bengaluru's dominance is structural, not coincidental.**
+SQL Query 7 shows Bengaluru has 23 unicorn HQs — nearly half of all mapped startups. Its tech talent pool, VC ecosystem, and startup culture create compounding advantages. Tier 2 cities (Jaipur, Noida, Chennai) account for just 3 unicorns combined.
+
+**4. India's unicorns prioritise growth over profit — but profitable ones are valued higher.**
+SQL Query 17 shows 55 out of 99 unicorns (55.6%) are loss-making. However, a counterintuitive finding emerges: profitable unicorns average a **$3,049M valuation vs $2,475M for loss-making ones** — markets do reward profitability eventually. SQL Query 18 shows E-commerce is the worst offender (19 out of 24 loss-making), while Fintech shows the most balanced split.
+
+> 📌 *Profitability classification derived from FY22 profit/loss data. 28 startups had no FY22 data available and are classified as "Unknown".*
+
+**5. Three investors shape India's unicorn map.**
+SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and Accel (8) together backed 37 unicorns — 37% of the entire dataset. This highly concentrated investor landscape means a small number of gatekeepers determine which startups reach unicorn status.
+
+---
+
+## 🚀 Recommendations
+
+**For Investors:**
+- Fintech and SaaS offer the best risk-adjusted returns given capital efficiency ratios
+- Watch Tier 2 cities — early-mover advantage is available in underserved markets
+
+**For Founders:**
+- Speed to unicorn is accelerating — AI & Research reached $1B in just 1 year (Krutrim)
+- Capital efficiency matters more in a funding winter — build lean, grow smart
+
+**For Policymakers:**
+- Incentivise VC activity in Tier 2 cities to decentralise the ecosystem
+- Support profitability pathways — India needs sustainable unicorns, not just valued ones
+
+---
+
+## ▶️ How to Run This Project
+
+### Prerequisites
+```bash
+pip install pandas numpy thefuzz python-Levenshtein jupyter
+```
+
+### Steps
+1. Clone the repository
+2. Place `Unicorn_Startups.csv` and `Unicorn_Companies.csv` in the root folder
+3. Run `01_data_cleaning.ipynb` → generates `Unicorn_Startups_Cleaned.csv`
+4. Run `02_data_enrichment.ipynb` → generates `Unicorn_Startups_Enriched.csv`
+5. Load `Unicorn_Startups_Enriched.csv` into PostgreSQL and run SQL queries
+6. Open the [live Tableau dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)
+
+---
+
+---
+
+## 🏁 Key Takeaways
+
+| # | Takeaway | Data Point |
+|---|---|---|
+| 1 | 2021 was India's unicorn supercycle | 46 unicorns born in a single year — 46% of all 99 |
+| 2 | Fintech + E-commerce dominate | Together = 50% of all Indian unicorns |
+| 3 | Bengaluru is India's startup capital | 23 unicorn HQs — nearly half of all mapped startups |
+| 4 | 3 investors control the ecosystem | Sequoia, Tiger Global, Accel backed 37% of all unicorns |
+| 5 | Most unicorns lose money | 55/99 are loss-making — growth over profit is the dominant strategy |
+| 6 | Profitability pays off eventually | Profitable unicorns valued 23% higher ($3,049M vs $2,475M avg) |
+| 7 | Capital efficiency varies widely | Upstox: 62.96x ratio vs CRED: 10.43x — same unicorn tier, very different approaches |
+| 8 | Speed to unicorn is sector-dependent | AI & Research: 1 year vs Media & Entertainment: 10.8 years |
+
+---
+
+## 👩‍💻 About Me
+
+**Mehreen Muzammil** — Junior Data Analyst & Business Analyst  
+📍 Cambridge, Ontario, Canada  
+🔗 [GitHub](https://github.com/MehreenMuzammil) | [Tableau Public](https://public.tableau.com/app/profile/mehreen.muzammil)
+
+---
+
+*This project was built as part of a data analytics portfolio to demonstrate end-to-end analytical skills across Python, SQL, and Tableau.*
