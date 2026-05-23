@@ -58,7 +58,7 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 
 ---
 
-## Live Dashboard
+## Tableau Dashboard
 
 **[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)**
 
