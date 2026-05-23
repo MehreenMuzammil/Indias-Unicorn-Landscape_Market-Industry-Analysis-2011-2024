@@ -1,4 +1,4 @@
-## - Project Overview
+## Project Overview
 
 This project is a **macro-level market and industry analysis** of India's unicorn startup ecosystem — companies valued at $1 billion or more. Using a multi-tool analytics pipeline, I explore what the rise of Indian unicorns reveals about industry trends, investor behaviour, geography, funding patterns, and the future of India's startup economy.
 
@@ -6,7 +6,7 @@ This project is a **macro-level market and industry analysis** of India's unicor
 
 ---
 
-- Goals & Analysis Performed
+## Goals & Analysis Performed
 
 | # | Goal | Analysis Performed |
 |---|---|---|
@@ -19,7 +19,7 @@ This project is a **macro-level market and industry analysis** of India's unicor
 
 ---
 
-- Project Roadmap
+## Project Roadmap
 
 ```
 Phase 1 — Data Cleaning (Python)
@@ -40,7 +40,7 @@ Phase 5 — Storytelling & Documentation
 
 ---
 
-- Business Relevance
+## Business Relevance
 
 This analysis is relevant to multiple real-world stakeholders:
 
@@ -58,13 +58,13 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 
 ---
 
-- Live Dashboard
+## Live Dashboard
 
 **[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)**
 
 ---
 
-- Tools & Technologies
+## Tools & Technologies
 
 | Tool | Purpose |
 |---|---|
@@ -76,7 +76,7 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 
 ---
 
-- Project Structure
+## Project Structure
 
 ```
 unicorn-startup-analysis/
@@ -101,7 +101,7 @@ unicorn-startup-analysis/
 
 ---
 
-- Datasets
+## Datasets
 
 | Dataset | Source | Records |
 |---|---|---|
