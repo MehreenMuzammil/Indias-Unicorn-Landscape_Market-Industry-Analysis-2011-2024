@@ -24,16 +24,16 @@ This project is a **macro-level market and industry analysis** of India's unicor
 ```
 Phase 1 — Data Cleaning (Python)
     └── Raw CSV → Cleaned & standardised dataset
-            ↓
+            
 Phase 2 — Data Enrichment (Python + fuzzy matching)
     └── Merged with global dataset → Added city, investor, funding columns
-            ↓
+            
 Phase 3 — SQL Analysis (PostgreSQL / pgAdmin 4)
     └── 18 queries across 5 analytical areas
-            ↓
+            
 Phase 4 — Visualisation (Tableau Public)
     └── 7-chart interactive dashboard published live
-            ↓
+            
 Phase 5 — Storytelling & Documentation
     └── Executive insights, recommendations, GitHub README
 ```
@@ -81,13 +81,13 @@ The 2021 boom and subsequent 2023–24 funding winter illustrate how macro condi
 ```
 unicorn-startup-analysis/
 │
-├── 01_data_cleaning.ipynb           ← Data cleaning & standardisation
-├── 02_data_enrichment.ipynb         ← Data enrichment via fuzzy matching
+├── 01_data_cleaning.ipynb           - Data cleaning & standardisation
+├── 02_data_enrichment.ipynb         - Data enrichment via fuzzy matching
 │
-├── Unicorn_Startups.csv             ← Original raw dataset
-├── Unicorn_Companies.csv            ← Global unicorn dataset (secondary source)
-├── Unicorn_Startups_Cleaned.csv     ← Output from notebook 01
-├── Unicorn_Startups_Enriched.csv    ← Output from notebook 02 (used in SQL & Tableau)
+├── Unicorn_Startups.csv             - Original raw dataset
+├── Unicorn_Companies.csv            - Global unicorn dataset (secondary source)
+├── Unicorn_Startups_Cleaned.csv     - Output from notebook 01
+├── Unicorn_Startups_Enriched.csv    - Output from notebook 02 (used in SQL & Tableau)
 │
 ├── sql_queries/
 │   ├── section1_market_overview.sql
