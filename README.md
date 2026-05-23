@@ -112,7 +112,7 @@ unicorn-startup-analysis/
 
 ---
 
-- Methodology
+## Methodology
 
 ### Phase 1 — Data Cleaning (Python)
 - Standardised column names and data types
@@ -141,7 +141,7 @@ Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 ---
 
-- Analysis & Key Findings
+## Analysis & Key Findings
 
 ### 1. Market Overview — The Unicorn Boom
 | Year | New Unicorns |
@@ -225,7 +225,7 @@ AI & Research reached unicorn status in just 1 year (driven by Krutrim). SaaS an
 
 ---
 
-## 💡 Executive Insights
+## Executive Insights
 
 **1. 2021 was a once-in-a-decade event — not the new normal.**
 SQL Query 1 & 3 show 46 unicorns were born in 2021 alone — more than all prior years combined. The 2023–24 funding winter (just 3 new unicorns) confirms this was macro-driven, not structural. Investors and founders should plan for longer runways.
@@ -239,7 +239,7 @@ SQL Query 7 shows Bengaluru has 23 unicorn HQs — nearly half of all mapped sta
 **4. India's unicorns prioritise growth over profit — but profitable ones are valued higher.**
 SQL Query 17 shows 55 out of 99 unicorns (55.6%) are loss-making. However, a counterintuitive finding emerges: profitable unicorns average a **$3,049M valuation vs $2,475M for loss-making ones** — markets do reward profitability eventually. SQL Query 18 shows E-commerce is the worst offender (19 out of 24 loss-making), while Fintech shows the most balanced split.
 
-> 📌 *Profitability classification derived from FY22 profit/loss data. 28 startups had no FY22 data available and are classified as "Unknown".*
+> *Profitability classification derived from FY22 profit/loss data. 28 startups had no FY22 data available and are classified as "Unknown".*
 
 **5. Three investors shape India's unicorn map.**
 SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and Accel (8) together backed 37 unicorns — 37% of the entire dataset. This highly concentrated investor landscape means a small number of gatekeepers determine which startups reach unicorn status.
