@@ -18,43 +18,48 @@ This project addresses that challenge by transforming raw startup data into acti
 
 ## Business Objectives
 
-The project aims to:
+The objective of this project is to transform raw startup data into actionable business intelligence that supports strategic decision-making across India's unicorn ecosystem.
 
-Identify industries driving India's unicorn growth.
-Evaluate funding and valuation trends.
-Analyze geographic concentration of startup activity.
-Understand investor participation across sectors.
-Deliver executive insights that support investment and strategic decision-making.
+Specifically, the analysis aims to:
+
+- Identify industries driving India's unicorn growth.
+- Evaluate funding efficiency and valuation trends across sectors.
+- Analyze geographic concentration of startup activity.
+- Understand investor participation and funding patterns.
+- Deliver executive insights that support investment, expansion, and policy decisions.
 
 ---
 
 ## Stakeholder Analysis
 
 | Stakeholder | Business Need |
-|---|---|	
-| Venture Capital Firms	| Identify investment opportunities |
-| Investment Analysts |	Compare industries and valuations |
-| Startup Founders | Benchmark market position |
-| Policymakers | Understand regional startup growth |
-| Corporate Strategy Teams | Monitor market trends and acquisition opportunities |
+|-------------|---------------|
+| Venture Capital Firms | Identify high-growth investment opportunities and capital-efficient sectors. |
+| Investment Analysts | Evaluate funding, valuation, and industry trends. |
+| Startup Founders | Benchmark their companies against industry leaders and understand funding expectations. |
+| Corporate Strategy Teams | Identify acquisition opportunities and emerging market trends. |
+| Government & Policymakers | Monitor regional startup growth and support ecosystem development. |
 
 ---
 
 ## Project Scope
 
-**In Scope**
-- Unicorn industry analysis
-- Funding trends
-- Geographic distribution
-- Investor analysis
-- Executive dashboard
-- Strategic recommendations
+### In Scope
 
-**Out of Scope**
+- Industry analysis
+- Funding and valuation analysis
+- Geographic distribution of unicorn startups
+- Investor landscape analysis
+- Executive dashboard development
+- Business recommendations
+
+### Out of Scope
+
 - Startup valuation prediction
-- Machine learning
+- Machine learning models
 - Financial forecasting
 - Company due diligence
+- Investment portfolio optimization
 
 ---
 
@@ -94,24 +99,26 @@ Phase 5 — Storytelling & Documentation
 
 ## Business Requirements
 
-| BR |  |
-|---|---|
-| BR-001 | Provide stakeholders with a consolidated view of India's unicorn ecosystem |
-| BR-002 | Support industry comparison using valuation and funding metrics |
-| BR-003 | Enable investment trend analysis across cities and industries |
-| BR-004 | Present findings through an interactive executive dashboard |
+| BR |    |
+| -- | -- |
+| BR-001 | Provide a consolidated view of India's unicorn startup ecosystem |
+| BR-002 | Enable comparison of industries using valuation, funding, and unicorn count |
+| BR-003 | Support investment decision-making through executive-level insights |
+| BR-004 | Identify geographic startup hubs across India |
+| BR-005 | Deliver interactive visualizations for business stakeholders |
 
 ---
 
 ## Functional Requirements
 
-| FR |  |
-|---|---|
-| FR-001 | Display total unicorn startups |
-| FR-002 | Display total valuation |
-| FR-003 | Rank industries by unicorn count |
-| FR-004 | Visualize startup distribution by city |
-| FR-005 | Provide interactive filters |
+| FR |    |
+| -- | -- |
+| FR-001 | Display total unicorn startups, total valuation, and funding KPIs |
+| FR-002 | Rank industries based on unicorn count and valuation |
+| FR-003 | Compare startup distribution across cities |
+| FR-004 | Analyze investor participation across industries |
+| FR-005 | Support interactive filtering by year, city, and industry |
+| FR-006 | Display funding efficiency and years-to-unicorn metrics |
 
 ---
 
