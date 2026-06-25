@@ -105,6 +105,7 @@ Phase 5 — Storytelling & Documentation
 
 ## Functional Requirements
 
+| FR |  |
 |---|---|
 | FR-001 | Display total unicorn startups |
 | FR-002 | Display total valuation |
