@@ -2,7 +2,15 @@
 
 This project is a **macro-level market and industry analysis** of India's unicorn startup ecosystem — companies valued at $1 billion or more. Using a multi-tool analytics pipeline, I explore what the rise of Indian unicorns reveals about industry trends, investor behaviour, geography, funding patterns, and the future of India's startup economy.
 
-> **Business Question:** *What does the rise of Indian unicorns reveal about industry trends, investor behaviour, and the future of India's startup ecosystem?*
+> **Business Question:**
+    This project aims to answer the following questions:
+    - Which industries dominate India's unicorn ecosystem?
+    - Which sectors generate the highest valuations?
+    - Which investors shape India's startup landscape?
+    - Which cities are emerging as startup hubs?
+    - How efficiently do startups convert funding into valuation?
+    - Which sectors reach unicorn status fastest?
+> 
 
 ---
 
@@ -94,6 +102,12 @@ Phase 4 — Visualisation (Tableau Public)
 Phase 5 — Storytelling & Documentation
     └── Executive insights, recommendations, GitHub README
 ```
+
+---
+
+## Tableau Dashboard
+
+**[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)**
 
 ---
 
@@ -189,12 +203,6 @@ Ran 18 queries across 5 analytical areas:
 
 ### Phase 4 — Visualisation (Tableau Public)
 Built an interactive 7-chart dashboard with cross-filtering capabilities.
-
----
-
-## Tableau Dashboard
-
-**[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/mehreen.muzammil/viz/Indiasunicorndashboard/Dashboard1)**
 
 ---
 
