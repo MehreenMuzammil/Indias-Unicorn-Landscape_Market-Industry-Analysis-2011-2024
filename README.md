@@ -94,6 +94,7 @@ Phase 5 — Storytelling & Documentation
 
 ## Business Requirements
 
+| BR |  |
 |---|---|
 | BR-001 | Provide stakeholders with a consolidated view of India's unicorn ecosystem |
 | BR-002 | Support industry comparison using valuation and funding metrics |
