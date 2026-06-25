@@ -349,6 +349,22 @@ SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and
 
 ---
 
+## Assumptions & Risks
+
+| Assumptions |
+| --- |
+| Kaggle datasets accurately represent Indian unicorns | 
+| Funding values are comparable | 
+| Fuzzy matching correctly identifies companies | 
+
+| Risk | Mitigation | 
+| --- | --- |
+| Missing funding | Secondary dataset | 
+| Company name mismatch | Fuzzy matching | 
+| Dataset not updated | Document limitations| 
+
+---
+
 ## Key Takeaways
 
 | # | Takeaway | Data Point |
