@@ -118,7 +118,7 @@ Phase 5 — Storytelling & Documentation
 ## Non-Functional Requirements
 
 | Non-Functional Requirements | 
-|---|---|
+|---|
 | Dashboard shall provide consistent calculations | 
 | Dashboard shall respond dynamically to filters | 
 | Analysis shall be reproducible | 
