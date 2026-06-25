@@ -115,7 +115,7 @@ Phase 5 — Storytelling & Documentation
 
 | BR |    |
 | -- | -- |
-| BR-001 | Provide a consolidated view of India's unicorn startup ecosystem |
+| BR-001 | Provide stakeholders with an executive view of India's unicorn ecosystem |
 | BR-002 | Enable comparison of industries using valuation, funding, and unicorn count |
 | BR-003 | Support investment decision-making through executive-level insights |
 | BR-004 | Identify geographic startup hubs across India |
@@ -148,7 +148,7 @@ Phase 5 — Storytelling & Documentation
 
 ---
 
-## Business Relevance
+## Business Value
 
 This analysis is relevant to multiple real-world stakeholders:
 
@@ -231,7 +231,7 @@ unicorn-startup-analysis/
 ├── Unicorn_Startups_Cleaned.csv     - Output from notebook 01
 ├── Unicorn_Startups_Enriched.csv    - Output from notebook 02 (used in SQL & Tableau)
 │
-├── sql_queries/
+├── sql_/
 │   ├── section1_market_overview.sql
 │   ├── section2_industry_analysis.sql
 │   ├── section3_geography.sql
@@ -395,4 +395,8 @@ SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and
 
 ---
 
-*This project was built as part of a data analytics portfolio to demonstrate end-to-end analytical skills across Python, SQL, and Tableau.*
+## Conclusion
+
+India's unicorn ecosystem has experienced remarkable growth driven primarily by Fintech, E-commerce, and a concentrated venture capital network. By integrating Python, PostgreSQL, and Tableau, this project transformed raw startup data into actionable business intelligence that can support investors, founders, strategy teams, and policymakers in making informed decisions.
+
+The project demonstrates an end-to-end analytics workflow—from data preparation and feature engineering to SQL-based business analysis, interactive dashboard development, and executive-level recommendations.
