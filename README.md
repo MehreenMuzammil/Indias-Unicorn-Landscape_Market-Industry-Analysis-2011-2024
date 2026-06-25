@@ -126,11 +126,11 @@ Phase 5 — Storytelling & Documentation
 
 | NFR |
 | -------- |
-| Dashboard shall provide consistent calculations | 
-| Dashboard shall respond dynamically to filters | 
-| Analysis shall be reproducible | 
-| Data transformations shall be documented | 
-| Visualizations shall be easy to interpret | 
+| Dashboard calculations shall remain consistent across all visualizations | 
+| Interactive filters shall update all dashboard components dynamically | 
+| Data transformations shall be fully documented and reproducible | 
+| Visualizations shall be easy to interpret for non-technical stakeholders | 
+| Analysis shall use standardized business terminology throughout the project | 
 
 ---
 
@@ -360,15 +360,15 @@ SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and
 
 | Assumptions |
 | --- |
-| Kaggle datasets accurately represent Indian unicorns | 
-| Funding values are comparable | 
-| Fuzzy matching correctly identifies companies | 
+| The Kaggle datasets accurately represent India's unicorn ecosystem | 
+| Funding and valuation values are reliable for comparative analysis | 
+| Fuzzy matching correctly identifies the majority of overlapping companies | 
 
 | Risk | Mitigation | 
-| --- | --- |
-| Missing funding | Secondary dataset | 
-| Company name mismatch | Fuzzy matching | 
-| Dataset not updated | Document limitations| 
+|------|------------|
+| Missing funding data | Supplemented using a secondary global unicorn dataset |
+| Company name inconsistencies | Resolved using fuzzy matching and manual validation |
+| Dataset coverage limitations | Clearly documented where enrichment was not possible |
 
 ---
 
@@ -386,6 +386,5 @@ SQL Query 10 shows Sequoia Capital India (19), Tiger Global Management (10), and
 | 8 | Speed to unicorn is sector-dependent | AI & Research: 1 year vs Media & Entertainment: 10.8 years |
 
 ---
-
 
 *This project was built as part of a data analytics portfolio to demonstrate end-to-end analytical skills across Python, SQL, and Tableau.*
