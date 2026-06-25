@@ -117,6 +117,7 @@ Phase 5 — Storytelling & Documentation
 
 ## Non-Functional Requirements
 
+| NFR |
 | -------- |
 | Dashboard shall provide consistent calculations | 
 | Dashboard shall respond dynamically to filters | 
@@ -141,6 +142,46 @@ Bengaluru's dominance highlights a geographic concentration risk for India's eco
 
 **Business Analysts & Strategy Teams**
 The 2021 boom and subsequent 2023–24 funding winter illustrate how macro conditions (interest rates, global liquidity) directly impact startup valuations — a critical input for market entry and expansion strategies.
+
+---
+
+## Datasets
+
+| Dataset | Source | Records |
+|---|---|---|
+| Indian Unicorn Startups | [Kaggle — saquib7hussain](https://www.kaggle.com/datasets/saquib7hussain/indian-unicorn-startups) | 99 startups |
+| Global Unicorn Companies | [Kaggle — deepcontractor](https://www.kaggle.com/datasets/deepcontractor/unicorn-companies-dataset) | 1,037 companies |
+
+> **Note:** City, investor, and funding data was enriched by merging the Indian dataset with the global unicorn dataset using fuzzy name matching in Python. 48/99 startups were successfully enriched. Remaining startups reflect newer entrants (post-2022) not yet captured in the global source.
+
+---
+
+## Methodology
+
+### Phase 1 — Data Cleaning (Python)
+- Standardised column names and data types
+- Converted valuation and profit/loss from text (`"$1 Billion"`) to numeric values
+- Standardised inconsistent industry labels (e.g. `"Fintech"`, `"Financial Technology"`, `"Fintech Payments"` → `"Fintech & Financial Services"`)
+- Normalised status values and city names
+- Engineered new columns: `years_to_unicorn`, `is_profitable`, `valuation_million_usd`
+
+### Phase 2 — Data Enrichment (Python)
+- Loaded secondary global dataset and filtered for Indian companies (63 matches)
+- Performed exact name matching first (46 matches)
+- Applied fuzzy matching using `thefuzz` library for remaining records (score threshold ≥ 65)
+- Added city, investor, total raised, and investors count columns
+- Cleaned and standardised city names (Bengaluru/Bangalore → Bengaluru)
+
+### Phase 3 — SQL Analysis (PostgreSQL)
+Ran 18 queries across 5 analytical areas:
+- Market Overview — boom years, cumulative growth
+- Industry Analysis — sector dominance, emerging vs saturated, avg valuation
+- Geography — city hubs, Tier 1 vs Tier 2
+- Investor Analysis — most active investors, sector dominance, portfolio value
+- Funding & Valuation — speed to unicorn, capital efficiency, profitability
+
+### Phase 4 — Visualisation (Tableau Public)
+Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 ---
 
@@ -184,46 +225,6 @@ unicorn-startup-analysis/
 │
 └── README.md
 ```
-
----
-
-## Datasets
-
-| Dataset | Source | Records |
-|---|---|---|
-| Indian Unicorn Startups | [Kaggle — saquib7hussain](https://www.kaggle.com/datasets/saquib7hussain/indian-unicorn-startups) | 99 startups |
-| Global Unicorn Companies | [Kaggle — deepcontractor](https://www.kaggle.com/datasets/deepcontractor/unicorn-companies-dataset) | 1,037 companies |
-
-> **Note:** City, investor, and funding data was enriched by merging the Indian dataset with the global unicorn dataset using fuzzy name matching in Python. 48/99 startups were successfully enriched. Remaining startups reflect newer entrants (post-2022) not yet captured in the global source.
-
----
-
-## Methodology
-
-### Phase 1 — Data Cleaning (Python)
-- Standardised column names and data types
-- Converted valuation and profit/loss from text (`"$1 Billion"`) to numeric values
-- Standardised inconsistent industry labels (e.g. `"Fintech"`, `"Financial Technology"`, `"Fintech Payments"` → `"Fintech & Financial Services"`)
-- Normalised status values and city names
-- Engineered new columns: `years_to_unicorn`, `is_profitable`, `valuation_million_usd`
-
-### Phase 2 — Data Enrichment (Python)
-- Loaded secondary global dataset and filtered for Indian companies (63 matches)
-- Performed exact name matching first (46 matches)
-- Applied fuzzy matching using `thefuzz` library for remaining records (score threshold ≥ 65)
-- Added city, investor, total raised, and investors count columns
-- Cleaned and standardised city names (Bengaluru/Bangalore → Bengaluru)
-
-### Phase 3 — SQL Analysis (PostgreSQL)
-Ran 18 queries across 5 analytical areas:
-- Market Overview — boom years, cumulative growth
-- Industry Analysis — sector dominance, emerging vs saturated, avg valuation
-- Geography — city hubs, Tier 1 vs Tier 2
-- Investor Analysis — most active investors, sector dominance, portfolio value
-- Funding & Valuation — speed to unicorn, capital efficiency, profitability
-
-### Phase 4 — Visualisation (Tableau Public)
-Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 ---
 
