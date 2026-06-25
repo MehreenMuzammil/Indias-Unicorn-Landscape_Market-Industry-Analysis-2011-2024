@@ -3,7 +3,7 @@
 This project is a **macro-level market and industry analysis** of India's unicorn startup ecosystem — companies valued at $1 billion or more. Using a multi-tool analytics pipeline, I explore what the rise of Indian unicorns reveals about industry trends, investor behaviour, geography, funding patterns, and the future of India's startup economy.
 
 > **Business Question:**
-    This project aims to answer the following questions:
+>
     - Which industries dominate India's unicorn ecosystem?
     - Which sectors generate the highest valuations?
     - Which investors shape India's startup landscape?
