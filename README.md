@@ -140,11 +140,11 @@ Phase 5 — Storytelling & Documentation
 
 | NFR ID |  Requirement |
 | -------- | -------- |
-| NFR ID-001 | Dashboard calculations shall remain consistent across all visualizations | 
-| NFR ID-002 | Interactive filters shall update all dashboard components dynamically | 
-| NFR ID-003 | Data transformations shall be fully documented and reproducible | 
-| NFR ID-004 | Visualizations shall be easy to interpret for non-technical stakeholders | 
-| NFR ID-005 | Analysis shall use standardized business terminology throughout the project | 
+| NFR-001 | Dashboard calculations shall remain consistent across all visualizations | 
+| NFR-002 | Interactive filters shall update all dashboard components dynamically | 
+| NFR-003 | Data transformations shall be fully documented and reproducible | 
+| NFR-004 | Visualizations shall be easy to interpret for non-technical stakeholders | 
+| NFR-005 | Analysis shall use standardized business terminology throughout the project | 
 
 ---
 
