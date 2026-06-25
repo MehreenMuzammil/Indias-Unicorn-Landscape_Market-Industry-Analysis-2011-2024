@@ -92,6 +92,35 @@ Phase 5 — Storytelling & Documentation
 
 ---
 
+## Business Requirements
+
+| BR-001 | Provide stakeholders with a consolidated view of India's unicorn ecosystem |
+| BR-002 | Support industry comparison using valuation and funding metrics |
+| BR-003 | Enable investment trend analysis across cities and industries |
+| BR-004 | Present findings through an interactive executive dashboard |
+
+---
+
+## Functional Requirements
+
+| FR-001 | Display total unicorn startups |
+| FR-002 | Display total valuation |
+| FR-003 | Rank industries by unicorn count |
+| FR-004 | Visualize startup distribution by city |
+| FR-005 | Provide interactive filters |
+
+---
+
+## Non-Functional Requirements
+
+| Dashboard shall provide consistent calculations | 
+| Dashboard shall respond dynamically to filters | 
+| Analysis shall be reproducible | 
+| Data transformations shall be documented | 
+| Visualizations shall be easy to interpret | 
+
+---
+
 ## Business Relevance
 
 This analysis is relevant to multiple real-world stakeholders:
