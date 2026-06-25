@@ -71,9 +71,9 @@ Specifically, the analysis aims to:
 
 ---
 
-## Goals & Analysis Performed
+## Analytical Objectives
 
-| # | Goal | Analysis Performed |
+| # | Objective | Analysis Performed |
 |---|---|---|
 | 1 | Understand the unicorn boom timeline | Total unicorns by year, cumulative growth curve, peak year identification |
 | 2 | Identify dominant and emerging sectors | Sector dominance by count, emerging vs saturated classification, avg valuation by sector |
@@ -210,11 +210,11 @@ Built an interactive 7-chart dashboard with cross-filtering capabilities.
 
 | Tool | Purpose |
 |---|---|
-| **Python (pandas, numpy)** | Data cleaning & enrichment |
+| **Python (pandas, numpy)** | Data preparation, feature engineering and enrichment |
 | **thefuzz** | Fuzzy name matching for dataset enrichment |
 | **Anaconda Toolbox** | Python notebook environment |
-| **PostgreSQL (pgAdmin 4)** | SQL analysis & querying |
-| **Tableau Public** | Interactive dashboard & visualisation |
+| **PostgreSQL (pgAdmin 4)** | Business analysis through structured querying |
+| **Tableau Public** | Executive dashboard and interactive decision support |
 
 ---
 
@@ -231,7 +231,7 @@ unicorn-startup-analysis/
 ├── Unicorn_Startups_Cleaned.csv     - Output from notebook 01
 ├── Unicorn_Startups_Enriched.csv    - Output from notebook 02 (used in SQL & Tableau)
 │
-├── sql_/
+├── sql/
 │   ├── section1_market_overview.sql
 │   ├── section2_industry_analysis.sql
 │   ├── section3_geography.sql
