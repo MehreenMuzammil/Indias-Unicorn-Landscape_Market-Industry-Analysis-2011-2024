@@ -6,6 +6,58 @@ This project is a **macro-level market and industry analysis** of India's unicor
 
 ---
 
+## Business Problem
+
+India's startup ecosystem has experienced rapid unicorn growth over the past decade. However, investors, strategy teams, and policymakers often rely on fragmented market reports that make it difficult to compare industries, evaluate funding efficiency, identify emerging startup hubs, and understand long-term market trends.
+
+Without a centralized analytical view, strategic investment decisions become slower, less consistent, and more dependent on manual research.
+
+This project addresses that challenge by transforming raw startup data into actionable business intelligence using Python, PostgreSQL, and Tableau.
+
+---
+
+## Business Objectives
+
+The project aims to:
+
+Identify industries driving India's unicorn growth.
+Evaluate funding and valuation trends.
+Analyze geographic concentration of startup activity.
+Understand investor participation across sectors.
+Deliver executive insights that support investment and strategic decision-making.
+
+---
+
+## Stakeholder Analysis
+
+| Stakeholder | Business Need |
+|---|---|	
+| Venture Capital Firms	| Identify investment opportunities |
+| Investment Analysts |	Compare industries and valuations |
+| Startup Founders | Benchmark market position |
+| Policymakers | Understand regional startup growth |
+| Corporate Strategy Teams | Monitor market trends and acquisition opportunities |
+
+---
+
+## Project Scope
+
+**In Scope**
+- Unicorn industry analysis
+- Funding trends
+- Geographic distribution
+- Investor analysis
+- Executive dashboard
+- Strategic recommendations
+
+**Out of Scope**
+- Startup valuation prediction
+- Machine learning
+- Financial forecasting
+- Company due diligence
+
+---
+
 ## Goals & Analysis Performed
 
 | # | Goal | Analysis Performed |
