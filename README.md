@@ -113,7 +113,7 @@ Phase 5 — Storytelling & Documentation
 
 ## Business Requirements
 
-| BR |    |
+| BR ID | Requirement |
 | -- | -- |
 | BR-001 | Provide stakeholders with an executive view of India's unicorn ecosystem |
 | BR-002 | Enable comparison of industries using valuation, funding, and unicorn count |
@@ -125,7 +125,7 @@ Phase 5 — Storytelling & Documentation
 
 ## Functional Requirements
 
-| FR |    |
+| FR ID | Requirement |
 | -- | -- |
 | FR-001 | Display total unicorn startups, total valuation, and funding KPIs |
 | FR-002 | Rank industries based on unicorn count and valuation |
@@ -138,13 +138,13 @@ Phase 5 — Storytelling & Documentation
 
 ## Non-Functional Requirements
 
-| NFR |
-| -------- |
-| Dashboard calculations shall remain consistent across all visualizations | 
-| Interactive filters shall update all dashboard components dynamically | 
-| Data transformations shall be fully documented and reproducible | 
-| Visualizations shall be easy to interpret for non-technical stakeholders | 
-| Analysis shall use standardized business terminology throughout the project | 
+| NFR ID |  Requirement |
+| -------- | -------- |
+| NFR ID-001 | Dashboard calculations shall remain consistent across all visualizations | 
+| NFR ID-002 | Interactive filters shall update all dashboard components dynamically | 
+| NFR ID-003 | Data transformations shall be fully documented and reproducible | 
+| NFR ID-004 | Visualizations shall be easy to interpret for non-technical stakeholders | 
+| NFR ID-005 | Analysis shall use standardized business terminology throughout the project | 
 
 ---
 
